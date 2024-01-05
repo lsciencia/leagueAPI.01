@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/leagueAPI/.vs/leagueAPI
+appsettings.json
+appsettings.Development.json
+/leagueAPI/leagueAPI/obj
+/leagueAPI/leagueAPI/bin
