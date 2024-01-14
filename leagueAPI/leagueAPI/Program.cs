@@ -1,4 +1,6 @@
 using leagueAPI.Helper;
+using leagueAPI.Repositories;
+using leagueAPI.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,7 @@ var keyValue = builder.Configuration.GetSection("SecretKey").GetSection("KEY").V
 SecretKey.KEY = keyValue;
 
 builder.Services.AddScoped<ICommunicator, Communicator>();
+builder.Services.AddScoped<ISummonerRepository, SummonerRepository>();
 
 var app = builder.Build();
 
